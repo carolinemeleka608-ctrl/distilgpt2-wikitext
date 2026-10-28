@@ -1,0 +1,600 @@
+{
+  "config": {
+    "model": "distilbert/distilgpt2",
+    "model_revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+    "dataset": "Salesforce/wikitext",
+    "dataset_revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "dataset_config": "wikitext-2-raw-v1",
+    "seed": 42,
+    "block_size": 128,
+    "batch_size": 4,
+    "max_steps": 100,
+    "learning_rate": 5e-05,
+    "requested_train_blocks": 512,
+    "requested_eval_blocks": 64,
+    "device": "cuda",
+    "actual_data": {
+      "train": {
+        "blocks": 512,
+        "tokens": 65536,
+        "target_tokens": 65024,
+        "sha256": "75f91c2a62b6b158cef86bd73f4cc8b0ce6ecf8b23581d1cb133245a318e6a97"
+      },
+      "validation": {
+        "blocks": 64,
+        "tokens": 8192,
+        "target_tokens": 8128,
+        "sha256": "be7e595f51a464df51e21d66a22dbbd2ea060530a12e27db674a6d544b92068e"
+      },
+      "test": {
+        "blocks": 64,
+        "tokens": 8192,
+        "target_tokens": 8128,
+        "sha256": "6c409a7e7583ac1a2467025319ec5cf943a324204b6084f75af53c2f62e7606b"
+      }
+    }
+  },
+  "versions": {
+    "torch": "2.11.0+cu130",
+    "transformers": "5.20.2",
+    "datasets": "4.8.5",
+    "huggingface-hub": "1.33.0",
+    "matplotlib": "3.10.0"
+  },
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "gpu": "Tesla T4",
+  "baseline_validation": {
+    "loss": 4.582642361521721,
+    "perplexity": 97.77240321654028,
+    "target_tokens": 8128
+  },
+  "trained_validation": {
+    "loss": 3.8830473124980927,
+    "perplexity": 48.57200385207645,
+    "target_tokens": 8128
+  },
+  "baseline_test": {
+    "loss": 4.844583123922348,
+    "perplexity": 127.05030671891225,
+    "target_tokens": 8128
+  },
+  "trained_test": {
+    "loss": 4.104254066944122,
+    "perplexity": 60.597525986955056,
+    "target_tokens": 8128
+  },
+  "completed_steps": 100,
+  "training_seconds": 13.712508898000124,
+  "tracked_weight_max_change": 0.0033236443996429443,
+  "processed_training_target_tokens": 50800,
+  "history": [
+    {
+      "step": 1,
+      "loss": 4.75293493270874,
+      "target_tokens": 508
+    },
+    {
+      "step": 2,
+      "loss": 4.598552703857422,
+      "target_tokens": 508
+    },
+    {
+      "step": 3,
+      "loss": 4.685792446136475,
+      "target_tokens": 508
+    },
+    {
+      "step": 4,
+      "loss": 4.750296592712402,
+      "target_tokens": 508
+    },
+    {
+      "step": 5,
+      "loss": 4.6307692527771,
+      "target_tokens": 508
+    },
+    {
+      "step": 6,
+      "loss": 4.792279243469238,
+      "target_tokens": 508
+    },
+    {
+      "step": 7,
+      "loss": 4.682849884033203,
+      "target_tokens": 508
+    },
+    {
+      "step": 8,
+      "loss": 4.456284523010254,
+      "target_tokens": 508
+    },
+    {
+      "step": 9,
+      "loss": 4.483759880065918,
+      "target_tokens": 508
+    },
+    {
+      "step": 10,
+      "loss": 4.3303728103637695,
+      "target_tokens": 508
+    },
+    {
+      "step": 11,
+      "loss": 4.5288591384887695,
+      "target_tokens": 508
+    },
+    {
+      "step": 12,
+      "loss": 4.437063694000244,
+      "target_tokens": 508
+    },
+    {
+      "step": 13,
+      "loss": 4.563803672790527,
+      "target_tokens": 508
+    },
+    {
+      "step": 14,
+      "loss": 4.245358467102051,
+      "target_tokens": 508
+    },
+    {
+      "step": 15,
+      "loss": 4.343261241912842,
+      "target_tokens": 508
+    },
+    {
+      "step": 16,
+      "loss": 4.518151760101318,
+      "target_tokens": 508
+    },
+    {
+      "step": 17,
+      "loss": 4.549375057220459,
+      "target_tokens": 508
+    },
+    {
+      "step": 18,
+      "loss": 4.389342784881592,
+      "target_tokens": 508
+    },
+    {
+      "step": 19,
+      "loss": 4.123146057128906,
+      "target_tokens": 508
+    },
+    {
+      "step": 20,
+      "loss": 4.068646430969238,
+      "target_tokens": 508
+    },
+    {
+      "step": 21,
+      "loss": 4.056035041809082,
+      "target_tokens": 508
+    },
+    {
+      "step": 22,
+      "loss": 4.294432640075684,
+      "target_tokens": 508
+    },
+    {
+      "step": 23,
+      "loss": 4.069307327270508,
+      "target_tokens": 508
+    },
+    {
+      "step": 24,
+      "loss": 4.201333045959473,
+      "target_tokens": 508
+    },
+    {
+      "step": 25,
+      "loss": 3.884878635406494,
+      "target_tokens": 508
+    },
+    {
+      "step": 26,
+      "loss": 3.9147238731384277,
+      "target_tokens": 508
+    },
+    {
+      "step": 27,
+      "loss": 4.246965408325195,
+      "target_tokens": 508
+    },
+    {
+      "step": 28,
+      "loss": 4.124590873718262,
+      "target_tokens": 508
+    },
+    {
+      "step": 29,
+      "loss": 4.398552894592285,
+      "target_tokens": 508
+    },
+    {
+      "step": 30,
+      "loss": 4.276403903961182,
+      "target_tokens": 508
+    },
+    {
+      "step": 31,
+      "loss": 4.462226390838623,
+      "target_tokens": 508
+    },
+    {
+      "step": 32,
+      "loss": 3.938131332397461,
+      "target_tokens": 508
+    },
+    {
+      "step": 33,
+      "loss": 4.307066917419434,
+      "target_tokens": 508
+    },
+    {
+      "step": 34,
+      "loss": 4.3621087074279785,
+      "target_tokens": 508
+    },
+    {
+      "step": 35,
+      "loss": 4.2351555824279785,
+      "target_tokens": 508
+    },
+    {
+      "step": 36,
+      "loss": 3.9538822174072266,
+      "target_tokens": 508
+    },
+    {
+      "step": 37,
+      "loss": 3.9697606563568115,
+      "target_tokens": 508
+    },
+    {
+      "step": 38,
+      "loss": 4.310070514678955,
+      "target_tokens": 508
+    },
+    {
+      "step": 39,
+      "loss": 4.09987735748291,
+      "target_tokens": 508
+    },
+    {
+      "step": 40,
+      "loss": 4.279879093170166,
+      "target_tokens": 508
+    },
+    {
+      "step": 41,
+      "loss": 4.0040364265441895,
+      "target_tokens": 508
+    },
+    {
+      "step": 42,
+      "loss": 4.2525105476379395,
+      "target_tokens": 508
+    },
+    {
+      "step": 43,
+      "loss": 4.091314315795898,
+      "target_tokens": 508
+    },
+    {
+      "step": 44,
+      "loss": 3.949507474899292,
+      "target_tokens": 508
+    },
+    {
+      "step": 45,
+      "loss": 4.402906894683838,
+      "target_tokens": 508
+    },
+    {
+      "step": 46,
+      "loss": 4.02638578414917,
+      "target_tokens": 508
+    },
+    {
+      "step": 47,
+      "loss": 4.128861427307129,
+      "target_tokens": 508
+    },
+    {
+      "step": 48,
+      "loss": 4.114172458648682,
+      "target_tokens": 508
+    },
+    {
+      "step": 49,
+      "loss": 4.2718939781188965,
+      "target_tokens": 508
+    },
+    {
+      "step": 50,
+      "loss": 4.201913833618164,
+      "target_tokens": 508
+    },
+    {
+      "step": 51,
+      "loss": 4.08768367767334,
+      "target_tokens": 508
+    },
+    {
+      "step": 52,
+      "loss": 4.239778995513916,
+      "target_tokens": 508
+    },
+    {
+      "step": 53,
+      "loss": 3.952742338180542,
+      "target_tokens": 508
+    },
+    {
+      "step": 54,
+      "loss": 4.01736307144165,
+      "target_tokens": 508
+    },
+    {
+      "step": 55,
+      "loss": 4.163095474243164,
+      "target_tokens": 508
+    },
+    {
+      "step": 56,
+      "loss": 3.951043128967285,
+      "target_tokens": 508
+    },
+    {
+      "step": 57,
+      "loss": 4.131028175354004,
+      "target_tokens": 508
+    },
+    {
+      "step": 58,
+      "loss": 4.2047810554504395,
+      "target_tokens": 508
+    },
+    {
+      "step": 59,
+      "loss": 3.756898880004883,
+      "target_tokens": 508
+    },
+    {
+      "step": 60,
+      "loss": 4.286920070648193,
+      "target_tokens": 508
+    },
+    {
+      "step": 61,
+      "loss": 3.768427610397339,
+      "target_tokens": 508
+    },
+    {
+      "step": 62,
+      "loss": 4.076944828033447,
+      "target_tokens": 508
+    },
+    {
+      "step": 63,
+      "loss": 4.171907901763916,
+      "target_tokens": 508
+    },
+    {
+      "step": 64,
+      "loss": 3.887484073638916,
+      "target_tokens": 508
+    },
+    {
+      "step": 65,
+      "loss": 4.156100273132324,
+      "target_tokens": 508
+    },
+    {
+      "step": 66,
+      "loss": 4.109847545623779,
+      "target_tokens": 508
+    },
+    {
+      "step": 67,
+      "loss": 3.911428689956665,
+      "target_tokens": 508
+    },
+    {
+      "step": 68,
+      "loss": 3.8099005222320557,
+      "target_tokens": 508
+    },
+    {
+      "step": 69,
+      "loss": 4.261340141296387,
+      "target_tokens": 508
+    },
+    {
+      "step": 70,
+      "loss": 3.7774693965911865,
+      "target_tokens": 508
+    },
+    {
+      "step": 71,
+      "loss": 4.133893966674805,
+      "target_tokens": 508
+    },
+    {
+      "step": 72,
+      "loss": 3.958526611328125,
+      "target_tokens": 508
+    },
+    {
+      "step": 73,
+      "loss": 3.8433406352996826,
+      "target_tokens": 508
+    },
+    {
+      "step": 74,
+      "loss": 3.8844153881073,
+      "target_tokens": 508
+    },
+    {
+      "step": 75,
+      "loss": 3.7846782207489014,
+      "target_tokens": 508
+    },
+    {
+      "step": 76,
+      "loss": 3.756840229034424,
+      "target_tokens": 508
+    },
+    {
+      "step": 77,
+      "loss": 4.227760314941406,
+      "target_tokens": 508
+    },
+    {
+      "step": 78,
+      "loss": 4.12818717956543,
+      "target_tokens": 508
+    },
+    {
+      "step": 79,
+      "loss": 4.0005903244018555,
+      "target_tokens": 508
+    },
+    {
+      "step": 80,
+      "loss": 3.8649353981018066,
+      "target_tokens": 508
+    },
+    {
+      "step": 81,
+      "loss": 4.27787446975708,
+      "target_tokens": 508
+    },
+    {
+      "step": 82,
+      "loss": 4.177570819854736,
+      "target_tokens": 508
+    },
+    {
+      "step": 83,
+      "loss": 4.102675437927246,
+      "target_tokens": 508
+    },
+    {
+      "step": 84,
+      "loss": 3.9699010848999023,
+      "target_tokens": 508
+    },
+    {
+      "step": 85,
+      "loss": 4.292155742645264,
+      "target_tokens": 508
+    },
+    {
+      "step": 86,
+      "loss": 3.764155864715576,
+      "target_tokens": 508
+    },
+    {
+      "step": 87,
+      "loss": 3.894007682800293,
+      "target_tokens": 508
+    },
+    {
+      "step": 88,
+      "loss": 3.813347578048706,
+      "target_tokens": 508
+    },
+    {
+      "step": 89,
+      "loss": 4.129481315612793,
+      "target_tokens": 508
+    },
+    {
+      "step": 90,
+      "loss": 4.0690531730651855,
+      "target_tokens": 508
+    },
+    {
+      "step": 91,
+      "loss": 3.8942677974700928,
+      "target_tokens": 508
+    },
+    {
+      "step": 92,
+      "loss": 3.8715715408325195,
+      "target_tokens": 508
+    },
+    {
+      "step": 93,
+      "loss": 3.261202096939087,
+      "target_tokens": 508
+    },
+    {
+      "step": 94,
+      "loss": 4.159878253936768,
+      "target_tokens": 508
+    },
+    {
+      "step": 95,
+      "loss": 3.879523754119873,
+      "target_tokens": 508
+    },
+    {
+      "step": 96,
+      "loss": 3.9947328567504883,
+      "target_tokens": 508
+    },
+    {
+      "step": 97,
+      "loss": 4.231569290161133,
+      "target_tokens": 508
+    },
+    {
+      "step": 98,
+      "loss": 3.825498342514038,
+      "target_tokens": 508
+    },
+    {
+      "step": 99,
+      "loss": 4.140230655670166,
+      "target_tokens": 508
+    },
+    {
+      "step": 100,
+      "loss": 4.06158971786499,
+      "target_tokens": 508
+    }
+  ],
+  "baseline_samples": [
+    {
+      "prompt": "Amsterdam is a city",
+      "text": "Amsterdam is a city of over 1,000 people. It is home to the largest city in the world, the Netherlands, and the Netherlands.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    },
+    {
+      "prompt": "Artificial intelligence can",
+      "text": "Artificial intelligence can be used to create a new kind of artificial intelligence.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    },
+    {
+      "prompt": "The history of",
+      "text": "The history of the United States is a fascinating one. The United States is a nation that has been a beacon of hope for the future of the United States.\n\n\n\nThe United States is a nation that"
+    }
+  ],
+  "trained_samples": [
+    {
+      "prompt": "Amsterdam is a city",
+      "text": "Amsterdam is a city of over 1 million people . The city is home to the largest concentration of illegal drugs in the world . The city is home to the largest concentration of illegal drugs in the world . The city is home"
+    },
+    {
+      "prompt": "Artificial intelligence can",
+      "text": "Artificial intelligence can be used to create a new kind of human being , and the human being can be used to create a new kind of human being , and the human being can be used to create a new kind of"
+    },
+    {
+      "prompt": "The history of",
+      "text": "The history of the United States is a complex and complex history . The United States was founded in 1849 by the late President John F. Kennedy . The United States was founded in 1849 by the late President John"
+    }
+  ]
+}

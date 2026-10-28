@@ -1,0 +1,5 @@
+torch==2.11.0+cu130
+transformers==5.20.2
+datasets==4.8.5
+huggingface-hub==1.33.0
+matplotlib==3.10.0
